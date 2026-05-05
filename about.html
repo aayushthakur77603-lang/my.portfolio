@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .about{
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-box{
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 350px;
+      margin: auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-box img{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00bcd4;
+    }
+
+    .about-box h2{
+      margin: 10px 0;
+    }
+
+    .about-box p{
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* Skills */
+    .skill{
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    .skill p{
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .bar{
+      background: #ddd;
+      border-radius: 10px;
+      height: 8px;
+    }
+
+    .fill{
+      height: 8px;
+      border-radius: 10px;
+      background: linear-gradient(to right,#00bcd4,#2196f3);
+    }
+
+    .html{ width: 80%; }
+    .css{ width: 70%; }
+
+    /* Social */
+    .social{
+      margin-top: 15px;
+    }
+
+    .social a{
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .social a:hover{
+      background: #00bcd4;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-logo">MySite</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+  <div class="about-box">
+
+    <img src="myphoto.jpg">
+
+    <h2>AYUSH THAKUR</h2>
+
+    <p>I am learning web development and building projects 🚀</p>
+
+    <!-- Skills -->
+    <div class="skill">
+      <p>HTML</p>
+      <div class="bar"><div class="fill html"></div></div>
+
+      <p>CSS</p>
+      <div class="bar"><div class="fill css"></div></div>
+    </div>
+
+    <!-- Social -->
+    <div class="social">
+      <a href="https://instagram.com/_aayush.thakur" target="_blank">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">GitHub</a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function toggleMenu(){
+  let menu = document.getElementById("navLinks");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>

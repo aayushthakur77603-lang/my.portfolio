@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* HERO */
+    .hero{
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right,#00bcd4,#2196f3);
+      color: white;
+    }
+
+    .hero h1{
+      font-size: 30px;
+    }
+
+    .hero p{
+      margin: 10px 0;
+    }
+
+    .hero button{
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: white;
+      color: #2196f3;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    /* PROJECTS */
+    .projects{
+      padding: 20px;
+      text-align: center;
+    }
+
+    .project-card{
+      background: white;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      display: inline-block;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .project-card:hover{
+      transform: translateY(-5px);
+    }
+    .projects{
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card{
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  margin: 20px auto;
+  box-shadow: 0 10 10px rgba(0,0,0,0.1);
+}
+.project-card a{
+  display:inline-block;
+  margin-top:10px;
+  padding:5px 10px;
+  background:#00bcd4;
+  color:white;
+  border-radius:5px;
+  text-decoration:none;
+}
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-logo">MyPortfolio</div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Hi, I'm AAYUSH THAKUR 👋</h1>
+  <p>Beginner Web Developer</p>
+  <button onclick="location.href='contact.html'">Contact Me</button>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects">
+  <h2>My Projects</h2> 
+
+<div class="project-card">
+  <h3>Calculator</h3>
+  <p>Basic calculator using HTML, CSS & JavaScript</p>
+  <a href="calculator.html">View Project</a>
+</div>
+
+
+<div class="project-card">
+  <h3>Login Page</h3>
+  <p>Simple login form using HTML & CSS</p>
+  <a href="login.html">View Project</a>
+</div>
+
+<script>
+function toggleMenu(){
+  let menu = document.getElementById("navLinks");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial;
+      background: linear-gradient(to right,#00bcd4,#2196f3);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .login-box{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      width:280px;
+      text-align:center;
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .login-box h2{
+      margin-bottom:15px;
+    }
+
+    input{
+      width:100%;
+      margin:10px 0;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      outline:none;
+    }
+
+    input:focus{
+      border-color:#00bcd4;
+      box-shadow:0 0 5px #00bcd4;
+    }
+
+    button{
+      width:100%;
+      padding:10px;
+      border:none;
+      border-radius:8px;
+      background: linear-gradient(to right,#00bcd4,#2196f3);
+      color:white;
+      cursor:pointer;
+      margin-top:10px;
+    }
+
+    button:hover{
+      transform:scale(1.05);
+    }
+
+    .extra{
+      margin-top:10px;
+      font-size:12px;
+      color:gray;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+
+  <button onclick="login()">Login</button>
+
+  <div class="extra">Forgot password?</div>
+</div>
+
+<script>
+function login(){
+  alert("Login Successful 😄");
+}
+</script>
+
+</body>
+</html>
